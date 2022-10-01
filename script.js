@@ -1,8 +1,4 @@
 const buttons = document.getElementsByTagName("button");
-for (const button of buttons) {
-  button.addEventListener("click", createRipple);
-}
-
 
 function createRipple(event) {
   const button = event.currentTarget;
@@ -23,6 +19,10 @@ function createRipple(event) {
   }
 
   button.appendChild(circle);
+}
+
+for (const button of buttons) {
+  button.addEventListener("click", createRipple);
 }
 
 function factorialPage(){
