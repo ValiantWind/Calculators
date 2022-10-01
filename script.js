@@ -25,19 +25,10 @@ function createRipple(event) {
   button.appendChild(circle);
 }
 
-//derivative calculator
-function derivative(x, y, x0, y0) {
-	return (y - y0) / (x - x0);
-}
-
 function factorialPage(){
-	window.location.href = "https://Calculators.valiantwind.repl.co/factorial.html";
-}
-
-function goToPowerRule(){
-	window.location.href = "https://ValiantWind.github.io/derivative-calculator/product-rule";
+	window.location.href = "https://ValiantWind.github.io/Calculators/factorial";
 }
 
 function backToHome(){
-	window.location.href = "https://ValiantWind.github.io/Calculators/factorial";
+	window.location.href = "https://ValiantWind.github.io/Calculators/";
 }
