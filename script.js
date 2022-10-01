@@ -1,5 +1,4 @@
 const buttons = document.getElementsByTagName("button");
-
 function createRipple(event) {
   const button = event.currentTarget;
 
@@ -26,9 +25,6 @@ for (const button of buttons) {
 }
 
 function factorialPage(){
-	window.location.href = "https://ValiantWind.github.io/Calculators/factorial";
+	window.location.href = "https://Calculators.valiantwind.repl.co/factorial.html";
 }
 
-function backToHome(){
-	window.location.href = "https://ValiantWind.github.io/Calculators/";
-}
