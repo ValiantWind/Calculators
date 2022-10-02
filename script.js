@@ -1,4 +1,6 @@
+const gitHubPagesUrl = 'https://ValiantWind.github.io/'
 const buttons = document.getElementsByTagName("button");
+
 function createRipple(event) {
   const button = event.currentTarget;
 
@@ -24,7 +26,22 @@ for (const button of buttons) {
   button.addEventListener("click", createRipple);
 }
 
-function factorialPage(){
-	window.location.href = "https://Calculators.valiantwind.repl.co/factorial.html";
+const goHomeButton = document.getElementById("goHome");
+
+goHomeButton.addEventListener("click", function() {
+	window.location.href = "https://ValiantWind.github.io/Calculators"
+});
+
+const factorialPageButton = document.getElementById("factorialPage");
+
+factorialPageButton.addEventListener("click", function() {
+	window.location.href = "https://ValiantWind.github.io/Calculators/factorial"
+});
+
+function mathPage(){
+	window.location.href = "https://ValiantWind.github.io/Calculators/math";
 }
 
+function sciencePage(){
+	window.location.href = "https://ValiantWind.github.io/Calculators/science.html";
+}
