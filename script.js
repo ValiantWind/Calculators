@@ -29,7 +29,7 @@ for (const button of buttons) {
 const goHomeButton = document.getElementById("goHome");
 
 goHomeButton.addEventListener("click", function() {
-	window.location.href = "https://ValiantWind.github.io/Calculators"
+	window.location.href = "https://Calculators.valiantwind.repl.co"
 });
 
 const factorialPageButton = document.getElementById("factorialPage");
@@ -43,5 +43,9 @@ function mathPage(){
 }
 
 function sciencePage(){
-	window.location.href = "https://ValiantWind.github.io/Calculators/science.html";
+	window.location.href = "https://ValiantWind.github.io/Calculators/science";
+}
+
+function limitsPage(){
+	window.location.href = "https://ValiantWind.github.io/Calculators/limits";
 }
