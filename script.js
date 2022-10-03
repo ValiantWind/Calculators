@@ -29,13 +29,13 @@ for (const button of buttons) {
 const goHomeButton = document.getElementById("goHome");
 
 goHomeButton.addEventListener("click", function() {
-	window.location.href = "https://ValiantWind.github.io/"
+	window.location.href = "https://ValiantWind.github.io/Calculators"
 });
 
 const factorialPageButton = document.getElementById("factorialPage");
 
 factorialPageButton.addEventListener("click", function() {
-	window.location.href = "https://ValiantWind.github.io/Calculators/factorial"
+	window.location.href = "https://ValiantWind.github.io/Calculators/factorials"
 });
 
 function mathPage(){
