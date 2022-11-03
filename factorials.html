@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Limits Calculator</title>
+	<title>Factorial Calculator</title>
 	<link href="style.css" rel="stylesheet" />
 </head>
 
@@ -12,18 +12,17 @@
 	<button align="left" type="submit" id="goHome">
 		<img src="img/arrow_back.svg"></button>
 	<div class="main">
-		<h1>Limits Calculator (WIP Don't use Yet)</h1>
+		<h1>Factorial Calculator</h1>
 
-		<input type="text" name="" id="limitFunction" autocomplete="off" placeholder="Enter Limit Function Here" />
-		<input type="text" name="" id="limitValue" autocomplete="off" placeholder="Enter the Approaching Value" />
-		<button align="center" type="submit" id="calculateLimit">
+		<input type="text" name="" id="factorialInput" autocomplete="off" placeholder="Enter Factorial Integer Here" />
+		<button align="center" type="submit" id="calculateFactorial">
 			Calculate
 		</button>
-		<output id="limitResults"></output>
+		<output id="factorialResults"></output>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 	<script src="script.js"></script>
-	<script src="js/math/limits.js"></script>
+	<script src="js/math/factorial.js"></script>
 </body>
 
 </html>
