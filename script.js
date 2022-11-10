@@ -39,29 +39,29 @@ if(goHomeButton) {
 
 if(factorialPageButton) {
 	factorialPageButton.addEventListener("click", function() {
-		window.location.href = "/factorials.html"
+		window.location.href = "https://valiantwind.github.io/Calculators/factorials"
 	});
 }
 
 if(derivativePageButton){
 	derivativePageButton.addEventListener("click", function() {
-		window.location.href = "/derivatives.html"
+		window.location.href = "https://valiantwind.github.io/Calculators/derivatives"
 	});
 }
 
 
 function mathPage() {
-	window.location.href = "/math.html";
+	window.location.href = "https://valiantwind.github.io/Calculators/math";
 }
 
 function sciencePage() {
-	window.location.href = "/science.html";
+	window.location.href = "https://valiantwind.github.io/Calculators/science";
 }
 
 function limitsPage() {
-	window.location.href = "/limits.html";
+	window.location.href = "https://valiantwind.github.io/Calculators/limits";
 }
 
 function percentErrorPage() {
-	window.location.href = "/percent-error.html";
+	window.location.href = "https://valiantwind.github.io/Calculators/percent-error";
 }
