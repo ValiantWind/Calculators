@@ -1,7 +1,9 @@
-const gitHubPagesUrl = 'https://ValiantWind.github.io/'
 const buttons = document.getElementsByTagName("button");
 const goHomeButton = document.getElementById("goHome");
 const factorialPageButton = document.getElementById("factorialsPage");
+const derivativePageButton = document.getElementById("derivativesPage");
+
+
 
 function createRipple(event) {
 	const button = event.currentTarget;
@@ -24,31 +26,42 @@ function createRipple(event) {
 	button.appendChild(circle);
 }
 
+
 for (const button of buttons) {
 	button.addEventListener("click", createRipple);
 }
 
+if(goHomeButton) {
+	goHomeButton.addEventListener("click", function() {
+		window.history.back();
+	});	
+}
 
-goHomeButton.addEventListener("click", function() {
-	window.location.href = "https://Calculators.valiantwind.repl.co"
-});
+if(factorialPageButton) {
+	factorialPageButton.addEventListener("click", function() {
+		window.location.href = "/factorials.html"
+	});
+}
 
-factorialPageButton.addEventListener("click", function() {
-	window.location.href = "https://Calculators.valiantwind.repl.co/factorials.html"
-});
+if(derivativePageButton){
+	derivativePageButton.addEventListener("click", function() {
+		window.location.href = "/derivatives.html"
+	});
+}
+
 
 function mathPage() {
-	window.location.href = "https://Calculators.valiantwind.repl.co/math.html";
+	window.location.href = "/math.html";
 }
 
 function sciencePage() {
-	window.location.href = "https://Calculators.valiantwind.repl.co/science.html";
+	window.location.href = "/science.html";
 }
 
 function limitsPage() {
-	window.location.href = "https://Calculators.valiantwind.repl.co/limits.html";
+	window.location.href = "/limits.html";
 }
 
 function percentErrorPage() {
-	window.location.href = "https://Calculators.valiantwind.repl.co/percent-error.html";
+	window.location.href = "/percent-error.html";
 }
