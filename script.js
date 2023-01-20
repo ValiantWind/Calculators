@@ -2,6 +2,12 @@ const buttons = document.getElementsByTagName("button");
 const goHomeButton = document.getElementById("goHome");
 const factorialPageButton = document.getElementById("factorialsPage");
 const derivativePageButton = document.getElementById("derivativesPage");
+const numeralPageButton = document.getElementById("numeralPage")
+const goback = document.getElementById("go-back")
+
+if(goback){
+	goback.src = "/img/arrow_back.svg"
+}
 
 
 
@@ -31,6 +37,12 @@ for (const button of buttons) {
 	button.addEventListener("click", createRipple);
 }
 
+if(numeralPageButton){
+	numeralPageButton.addEventListener("click", (e) => {
+		window.location.href = "/html/converters/numeral.html"
+	})
+}
+
 if(goHomeButton) {
 	goHomeButton.addEventListener("click", function() {
 		window.history.back();
@@ -39,29 +51,33 @@ if(goHomeButton) {
 
 if(factorialPageButton) {
 	factorialPageButton.addEventListener("click", function() {
-		window.location.href = "https://valiantwind.github.io/Calculators/factorials"
+		window.location.href = "/html/math/factorials.html"
 	});
 }
 
 if(derivativePageButton){
 	derivativePageButton.addEventListener("click", function() {
-		window.location.href = "https://valiantwind.github.io/Calculators/derivatives"
+		window.location.href = "/html/math/derivatives.html"
 	});
 }
 
 
 function mathPage() {
-	window.location.href = "https://valiantwind.github.io/Calculators/math";
+	window.location.href = "/math.html";
 }
 
 function sciencePage() {
-	window.location.href = "https://valiantwind.github.io/Calculators/science";
+	window.location.href = "/science.html";
 }
 
-function limitsPage() {
-	window.location.href = "https://valiantwind.github.io/Calculators/limits";
+function numeralPage() {
+	window.location.href = "/html/converters/numberal.html";
 }
 
 function percentErrorPage() {
-	window.location.href = "https://valiantwind.github.io/Calculators/percent-error";
+	window.location.href = "/html/science/percent-error.html";
+}
+
+function converterPage() {
+	window.location.href = "/converter.html"
 }
