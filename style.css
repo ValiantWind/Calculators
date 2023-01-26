@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     background: rgba(18, 18, 18, 1);
 }
-h1{
+h1, h2, h3{
     color: white;
 		text-align: center;
     margin: 15px;
@@ -31,24 +31,6 @@ h1{
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-}
-h2{
-    color: white;
-		text-align: center;
-    margin: 15px;
-    font-family: 'Gotham Screen Smart', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-}
-h3{
-    color: white;
-    margin: 15px;
-    font-family: 'Gotham Screen Smart', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-	font-size: 1.2rem;
 }
 input{
     width: 300px;
