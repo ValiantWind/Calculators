@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>To Numeral Converter</title>
+	<title>Fahrenheit-Celcius Converter</title>
 	<link href="/style.css" rel="stylesheet" />
 </head>
 
@@ -12,16 +12,19 @@
 	<button align="left" type="submit" id="goHome">
 		<img id="go-back"></button>
 	<div class="main">
-		<h1>Numeral Converter (Not finished)</h1>
-		<input type="number" min="1" id="toNumeralInput" autocomplete="off" placeholder="Enter Numeral" />
-		<button align="center" type="submit" id="toNumeral">
-			Convert
+		<h1>Fahrenheit-Celcius Converter (Not finished)</h1>
+		<input type="number" id="tempInput" autocomplete="off" placeholder="Enter Temperature" />
+		<button align="center" type="submit" id="toFahrenheit">
+			Convert to Fahrenheit
 		</button>
-		<output id="numeralOutput"></output>
+		<button align="center" type="submit" id="toCelcius">
+			Convert to Celcius
+		</button>
+		<output id="tempOutput"></output>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 	<script src="/script.js"></script>
-	<script src="/js/converters/numeral.js"></script>
+	<script src="/js/converters/temperature.js"></script>
 </body>
 
 </html>

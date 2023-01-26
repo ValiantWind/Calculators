@@ -9,8 +9,6 @@ if(goback){
 	goback.src = "/img/arrow_back.svg"
 }
 
-
-
 function createRipple(event) {
 	const button = event.currentTarget;
 
@@ -39,7 +37,7 @@ for (const button of buttons) {
 
 if(numeralPageButton){
 	numeralPageButton.addEventListener("click", (e) => {
-		window.location.href = "/html/converters/numeral.html"
+		window.location.href = "/html/converters/temperature.html"
 	})
 }
 
@@ -70,12 +68,12 @@ function sciencePage() {
 	window.location.href = "/science.html";
 }
 
-function numeralPage() {
-	window.location.href = "/html/converters/numberal.html";
+function limitsPage() {
+	window.location.href = "/pages/math/limits.html";
 }
 
 function percentErrorPage() {
-	window.location.href = "/html/science/percent-error.html";
+	window.location.href = "/pages/science/percent-error.html";
 }
 
 function converterPage() {
