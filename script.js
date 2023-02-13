@@ -2,7 +2,7 @@ const buttons = document.getElementsByTagName("button");
 const goHomeButton = document.getElementById("goHome");
 const factorialPageButton = document.getElementById("factorialsPage");
 const derivativePageButton = document.getElementById("derivativesPage");
-const numeralPageButton = document.getElementById("numeralPage")
+const tempPageButton = document.getElementById("tempPage")
 const goback = document.getElementById("go-back")
 
 if(goback){
@@ -35,8 +35,8 @@ for (const button of buttons) {
 	button.addEventListener("click", createRipple);
 }
 
-if(numeralPageButton){
-	numeralPageButton.addEventListener("click", (e) => {
+if(tempPageButton){
+	tempPageButton.addEventListener("click", (e) => {
 		window.location.href = "/html/converters/temperature.html"
 	})
 }
