@@ -1,32 +1,21 @@
-// TBF
-
 const toCelciusBtn = document.getElementById("toCelcius");
 const toFahrenheitBtn = document.getElementById("toFahrenheit");
-const input = document.querySelector("tempInput");
-const output = document.querySelector("tempOutput");
+const input = document.getElementById("tempInput");
+const output = document.getElementById("tempOutput");
 
 function roundNumber(num){
 	return Math.round(num * 100) / 100
 }
 
-function toCelcius(f){
-	return ((f-32)*5)/9
-}
+const celsiusToFahrenheit = degrees => 1.8 * degrees + 32;
 
-function toFahrenheit(c){
-	return (5/9) * (c - 32)
-}
+const fahrenheitToCelsius = degrees => (degrees - 32) * 5 / 9;
 
 
 toCelciusBtn.addEventListener("click", (e) => {
-	const fInput = parseFloat(input.value)
-	const celcius = toCelcius(fInput)
-	output.innerHTML = roundNumber(celcius) + " °C"
+	output.innerHTML = `${roundNumber(fahrenheitToCelsius(input.value))} ℃`
 })
 
 toFahrenheitBtn.addEventListener("click", (e) => {
-	const cInput = parseFloat(input.value)
-	const fahrenheit = toFahrenheit(cInput)
-	
-	output.innerHTML = roundNumber(fahrenheit) + " °F"
+	output.innerHTML = `${roundNum(celsiusToFahrenheit(input.value))} ℉`
 })

@@ -2,8 +2,10 @@ const buttons = document.getElementsByTagName("button");
 const goHomeButton = document.getElementById("goHome");
 const factorialPageButton = document.getElementById("factorialsPage");
 const derivativePageButton = document.getElementById("derivativesPage");
-const tempPageButton = document.getElementById("tempPage")
-const goback = document.getElementById("go-back")
+const tempPageButton = document.getElementById("tempPage");
+const goback = document.getElementById("go-back");
+const degreeRadianButton = document.getElementById("degreeRadianPage");
+const primeFactorsButton = document.getElementById("primeFactorsPage")
 
 if(goback){
 	goback.src = "https://ValiantWind.github.io/Calculators/img/arrow_back.svg"
@@ -35,11 +37,25 @@ for (const button of buttons) {
 	button.addEventListener("click", createRipple);
 }
 
-if(tempPageButton){
+if(degreeRadianPageButton){
 	tempPageButton.addEventListener("click", (e) => {
-		window.location.href = "https://ValiantWind.github.io/Calculators/html/converters/temperature.html"
+		window.location.href = "https://ValiantWind.github.io/Calculators/pages/converters/degrees-radians.html"
 	})
 }
+
+if(tempPageButton){
+	tempPageButton.addEventListener("click", (e) => {
+		window.location.href = "https://ValiantWind.github.io/Calculators/pages/converters/temperature.html"
+	})
+}
+
+if(primeFactorsButton){
+	primeFactorsButton.addEventListener("click", (e) => {
+		window.location.href = "https://ValiantWind.github.io/Calculators/pages/Math/prime-factors.html"
+	})
+}
+
+
 
 if(goHomeButton) {
 	goHomeButton.addEventListener("click", function() {
@@ -49,13 +65,13 @@ if(goHomeButton) {
 
 if(factorialPageButton) {
 	factorialPageButton.addEventListener("click", function() {
-		window.location.href = "https://ValiantWind.github.io/Calculators/html/math/factorials.html"
+		window.location.href = "https://ValiantWind.github.io/Calculators/pages/math/factorials.html"
 	});
 }
 
 if(derivativePageButton){
 	derivativePageButton.addEventListener("click", function() {
-		window.location.href = "https://ValiantWind.github.io/Calculators/html/math/derivatives.html"
+		window.location.href = "https://ValiantWind.github.io/Calculators/pages/math/derivatives.html"
 	});
 }
 
@@ -79,3 +95,4 @@ function percentErrorPage() {
 function converterPage() {
 	window.location.href = "https://ValiantWind.github.io/Calculators/converter.html"
 }
+

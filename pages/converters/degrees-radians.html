@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Fahrenheit-Celcius Converter</title>
+	<title>Degree Converter</title>
 	<link href="/style.css" rel="stylesheet" />
 </head>
 
@@ -12,19 +12,19 @@
 	<button align="left" type="submit" id="goHome">
 		<img id="go-back"></button>
 	<div class="main">
-		<h1>Fahrenheit-Celcius Converter</h1>
-		<input type="number" id="tempInput" autocomplete="off" placeholder="Enter Temperature" />
-		<button align="center" type="submit" id="toFahrenheit">
-			Convert to Fahrenheit
+		<h1>Degree-Radian Calculator</h1>
+		<input type="number" id="degree-radian-input" autocomplete="off" placeholder="Enter Degrees or Radians" />
+		<button align="center" type="submit" id="toDegrees">
+			Convert to Degrees
 		</button>
-		<button align="center" type="submit" id="toCelcius">
-			Convert to Celcius
+		<button align="center" type="submit" id="toRadians">
+			Convert to Radians
 		</button>
-		<output id="tempOutput"></output>
+		<output id="degree-radian-output"></output>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 	<script src="/script.js"></script>
-	<script src="/js/converters/temperature.js"></script>
+	<script src="/js/converters/degrees-radians.js"></script>
 </body>
 
 </html>
