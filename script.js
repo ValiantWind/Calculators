@@ -38,7 +38,7 @@ for (const button of buttons) {
 }
 
 if(degreeRadianButton){
-	tempPageButton.addEventListener("click", (e) => {
+	degreeRadianButton.addEventListener("click", (e) => {
 		window.location.href = "https://ValiantWind.github.io/Calculators/pages/converters/degrees-radians.html"
 	})
 }
@@ -51,7 +51,7 @@ if(tempPageButton){
 
 if(primeFactorsButton){
 	primeFactorsButton.addEventListener("click", (e) => {
-		window.location.href = "https://ValiantWind.github.io/Calculators/pages/Math/prime-factors.html"
+		window.location.href = "https://ValiantWind.github.io/Calculators/pages/math/prime-factors.html"
 	})
 }
 

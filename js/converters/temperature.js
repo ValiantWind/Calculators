@@ -17,5 +17,5 @@ toCelciusBtn.addEventListener("click", (e) => {
 })
 
 toFahrenheitBtn.addEventListener("click", (e) => {
-	output.innerHTML = `${roundNum(celsiusToFahrenheit(input.value))} ℉`
+	output.innerHTML = `${roundNumber(celsiusToFahrenheit(input.value))} ℉`
 })
