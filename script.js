@@ -37,7 +37,7 @@ for (const button of buttons) {
 	button.addEventListener("click", createRipple);
 }
 
-if(degreeRadianPageButton){
+if(degreeRadianButton){
 	tempPageButton.addEventListener("click", (e) => {
 		window.location.href = "https://ValiantWind.github.io/Calculators/pages/converters/degrees-radians.html"
 	})
